@@ -15,11 +15,15 @@ main,.bar,footer{width:min(100% - 3rem,58rem);margin:auto}.bar{display:flex;alig
 h1,h2,h3,p,figure{margin:0}h1,h2,.paper h3{font-family:var(--serif);font-weight:500}h1{font-size:clamp(3rem,6vw,4.2rem);letter-spacing:-.055em;line-height:1.04}.han{font:400 clamp(1.2rem,2.3vw,1.5rem)/1.4 'Songti SC','Noto Serif CJK SC',serif;letter-spacing:.1em;color:var(--soft);white-space:nowrap;margin-left:.55rem}
 .affiliation{margin:.8rem 0 1.1rem;color:var(--soft)}.bio{max-width:40rem}.contact{margin-top:1rem;gap:0}.contact a+a::before{content:'/';display:inline-block;color:#a0a8b0;margin:0 .75rem}
 section{scroll-margin-top:1rem}.rule{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.6rem}h2{font-size:2rem;letter-spacing:-.04em;line-height:1.25}.year,time,figcaption{color:var(--soft);font-size:.85rem;font-variant-numeric:tabular-nums}
-.paper{display:grid;grid-template-columns:34% 1fr;gap:2rem;padding:1.6rem 0 2.7rem;align-items:start}.comparison{padding:.8rem;background:#f1f4f6;border:1px solid #e0e5e9;border-radius:3px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}.pair img{width:100%;height:auto;display:block}.pair figcaption{font-size:.78rem;color:#394956;padding-top:.35rem}.example{display:block;font-size:.81rem;color:var(--soft);margin-top:.55rem}
+.paper{padding:1.5rem 0 2.7rem}
+.paper-figure{margin:1.5rem 0 0}
+.paper-figure a{display:block;cursor:zoom-in}
+.paper-figure img{display:block;width:100%;height:auto}
+.paper-figure figcaption{margin-top:.6rem}
 .paper h3{font-size:1.57rem;line-height:1.2;letter-spacing:-.025em}.paper h3 a{color:var(--ink)}.authors{margin-top:.55rem;font-size:.94rem}.venue{color:var(--soft);font-size:.88rem;margin:.1rem 0 .7rem}.resources{font-size:.91rem;gap:1.1rem;margin-top:.65rem}
 .lower{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;padding-bottom:2.8rem}.lower h2{font-size:1.65rem}.entry{margin-top:1rem}.entry h3{font-weight:600;font-size:1rem}.entry p{color:var(--soft);font-size:.94rem}.entry time{display:block;margin:.25rem 0 0}
 footer{padding:1rem 0 2rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--soft);font-size:.83rem}
-@media(max-width:670px){main,.bar,footer{width:calc(100% - 2.5rem)}.intro{grid-template-columns:minmax(0,1fr) 5.5rem;gap:1rem;padding:2.4rem 0}.intro .bio,.intro .contact{grid-column:1/-1}.intro-copy{display:contents}.intro-name{grid-area:1/1}.intro img{grid-area:1/2}.affiliation{margin:.65rem 0 0}.contact{margin:0}.paper{grid-template-columns:1fr;gap:1.1rem;padding-bottom:2rem}.paper-figure{max-width:24rem}.lower{grid-template-columns:1fr;gap:1.7rem}.han{display:block;margin:.3rem 0 0}.signature{font-size:1.15rem}nav{gap:.75rem}.bar button{padding-left:.65rem}}
+@media(max-width:670px){main,.bar,footer{width:calc(100% - 2.5rem)}.intro{grid-template-columns:minmax(0,1fr) 5.5rem;gap:1rem;padding:2.4rem 0}.intro .bio,.intro .contact{grid-column:1/-1}.intro-copy{display:contents}.intro-name{grid-area:1/1}.intro img{grid-area:1/2}.affiliation{margin:.65rem 0 0}.contact{margin:0}.paper{padding-bottom:2rem}.lower{grid-template-columns:1fr;gap:1.7rem}.han{display:block;margin:.3rem 0 0}.signature{font-size:1.15rem}nav{gap:.75rem}.bar button{padding-left:.65rem}}
 @media(max-width:380px){main,.bar,footer{width:calc(100% - 1.6rem)}.signature{font-size:1rem}nav{gap:.5rem}}
 </style>
 </head>
@@ -33,11 +37,15 @@ footer{padding:1rem 0 2rem;border-top:1px solid var(--line);display:flex;justify
 <img src="./avatar.jpg" alt="Sihan Ji" width="914" height="1280">
 </div>
 <section id="research"><div class="rule"><h2 data-zh="代表研究">Selected Research</h2><span class="year">2026</span></div>
-<article class="paper"><div class="paper-figure"><div class="comparison"><div class="pair"><figure><img src="./qr-input.webp" width="329" height="257" alt="Blurred QR code with its reference shown in the inset"><figcaption data-zh="输入与参考图">Input + reference</figcaption></figure><figure><img src="./qr-output.webp" width="329" height="257" alt="Sharper QR code recovered by PreciseRef"><figcaption>PreciseRef</figcaption></figure></div></div><small class="example" data-zh="VeriRef · 恢复可解码的二维码">VeriRef · Recovering a decodable QR code</small></div>
+<article class="paper">
 <div><h3><a href="https://arxiv.org/abs/2611.33455">Recovering What Matters, Transferring Only What Is Reliable: Toward Precise Reference-Based Super-Resolution</a></h3>
 <p class="authors"><strong>Sihan Ji</strong>, Wenxin Chen, Yue Shi, Jiezhang Cao</p><p class="venue" data-zh="arXiv 预印本 · 2026">arXiv preprint · 2026</p>
 <p data-zh="PreciseRef 在超分辨率重建中从参考图读取文字、二维码和身份细节。两级门控先判断参考图是否相关，再检查局部区域是否匹配，以减少错误细节的迁移。">PreciseRef uses a reference image to recover details such as lettering, QR codes, and facial features. Two gates check whether the reference is relevant and whether individual regions match before transferring detail.</p>
-<div class="resources"><a href="https://arxiv.org/abs/2611.33455">arXiv</a><a href="https://arxiv.org/pdf/2611.33455">PDF</a></div></div></article></section>
+<div class="resources"><a href="https://arxiv.org/abs/2611.33455">arXiv</a><a href="https://arxiv.org/pdf/2611.33455">PDF</a></div></div>
+<figure class="paper-figure">
+  <a href="./preciseref-pipeline.webp" target="_blank" rel="noopener"><img src="./preciseref-pipeline.webp" width="1900" height="1042" alt="PreciseRef pipeline showing token encoding, asymmetric twin-attention and dual-scale reference gating. Open full-size figure."></a>
+  <figcaption data-zh="PreciseRef 方法流程图 · 点击查看大图">PreciseRef method overview · Click to enlarge</figcaption>
+</figure></article></section>
 <div class="lower"><section id="experience"><div class="rule"><h2 data-zh="研究经历">Research Experience</h2></div>
 <div class="entry"><h3>Deep Pixel Group, SJTU</h3><p data-zh="本科生研究助理 · 参考引导的视频编辑与图像修复">Undergraduate researcher · Reference-guided video editing and image restoration</p><time data-zh="2026 年 4 月至今">Apr 2026 – present</time></div>
 <div class="entry"><h3 data-zh="上海交通大学微电子学院">School of Microelectronics, SJTU</h3><p data-zh="本科生研究助理 · 用 Verilog 实现神经网络激活函数的硬件加速">Undergraduate researcher · Hardware acceleration for neural network activations in Verilog</p><time data-zh="2025 年 9 月至 2026 年 2 月">Sep 2025 – Feb 2026</time></div></section>
