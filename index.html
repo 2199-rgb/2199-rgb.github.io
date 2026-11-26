@@ -3,68 +3,215 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Sihan Ji, an undergraduate at Shanghai Jiao Tong University researching reference-guided image restoration and video editing.">
+<meta name="description" content="Sihan Ji, an undergraduate at Shanghai Jiao Tong University researching image restoration, video editing and generation, and world models. Open to internships and research collaborations.">
 <title>Sihan Ji · 纪斯瀚</title>
 <link rel="icon" href="./favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://2199-rgb.github.io/">
+<meta property="og:title" content="Sihan Ji · 纪斯瀚">
+<meta property="og:description" content="Undergraduate at Shanghai Jiao Tong University working on image restoration, video editing and generation, and world models. Open to internships and research collaborations.">
+<meta property="og:image" content="https://2199-rgb.github.io/avatar.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:light;--ink:#20272d;--soft:#505d68;--blue:#22538b;--line:#d6dde3;--serif:Charter,'Iowan Old Style','Palatino Linotype',Georgia,serif}
-*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:1rem/1.6 Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif}
-[hidden]{display:none!important}a{color:var(--blue);text-decoration:none;text-underline-offset:.22em}a:hover{text-decoration:underline}a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
-main,.bar,footer{width:min(100% - 3rem,58rem);margin:auto}.bar{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 0;border-bottom:1px solid var(--line);gap:1rem}.signature{font:italic 1.35rem var(--serif);color:var(--ink)}nav,.contact,.resources{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}nav{font-size:.89rem}nav a{color:var(--soft)}button{font:inherit;cursor:pointer;color:var(--blue);border:0;border-left:1px solid var(--line);background:none;padding:0 0 0 1rem}
-.intro{display:grid;grid-template-columns:minmax(0,1fr) 10rem;align-items:center;gap:clamp(2rem,7vw,6rem);padding:3.8rem 0 3.5rem}.intro img{display:block;width:100%;height:auto;border-radius:2px}
-h1,h2,h3,p,figure{margin:0}h1,h2,.paper h3{font-family:var(--serif);font-weight:500}h1{font-size:clamp(3rem,6vw,4.2rem);letter-spacing:-.055em;line-height:1.04}.han{font:400 clamp(1.2rem,2.3vw,1.5rem)/1.4 'Songti SC','Noto Serif CJK SC',serif;letter-spacing:.1em;color:var(--soft);white-space:nowrap;margin-left:.55rem}
-.affiliation{margin:.8rem 0 1.1rem;color:var(--soft)}.bio{max-width:40rem}.contact{margin-top:1rem;gap:0}.contact a+a::before{content:'/';display:inline-block;color:#a0a8b0;margin:0 .75rem}
-section{scroll-margin-top:1rem}.rule{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.6rem}h2{font-size:2rem;letter-spacing:-.04em;line-height:1.25}.year,time,figcaption{color:var(--soft);font-size:.85rem;font-variant-numeric:tabular-nums}
-.paper{padding:1.5rem 0 2.7rem}
-.paper-figure{margin:1.5rem 0 0}
-.paper-figure a{display:block;cursor:zoom-in}
-.paper-figure img{display:block;width:100%;height:auto}
-.paper-figure figcaption{margin-top:.6rem}
-.paper h3{font-size:1.57rem;line-height:1.2;letter-spacing:-.025em}.paper h3 a{color:var(--ink)}.authors{margin-top:.55rem;font-size:.94rem}.venue{color:var(--soft);font-size:.88rem;margin:.1rem 0 .7rem}.resources{font-size:.91rem;gap:1.1rem;margin-top:.65rem}
-.lower{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;padding-bottom:2.8rem}.lower h2{font-size:1.65rem}.entry{margin-top:1rem}.entry h3{font-weight:600;font-size:1rem}.entry p{color:var(--soft);font-size:.94rem}.entry time{display:block;margin:.25rem 0 0}
-footer{padding:1rem 0 2rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--soft);font-size:.83rem}
-@media(max-width:670px){main,.bar,footer{width:calc(100% - 2.5rem)}.intro{grid-template-columns:minmax(0,1fr) 5.5rem;gap:1rem;padding:2.4rem 0}.intro .bio,.intro .contact{grid-column:1/-1}.intro-copy{display:contents}.intro-name{grid-area:1/1}.intro img{grid-area:1/2}.affiliation{margin:.65rem 0 0}.contact{margin:0}.paper{padding-bottom:2rem}.lower{grid-template-columns:1fr;gap:1.7rem}.han{display:block;margin:.3rem 0 0}.signature{font-size:1.15rem}nav{gap:.75rem}.bar button{padding-left:.65rem}}
-@media(max-width:380px){main,.bar,footer{width:calc(100% - 1.6rem)}.signature{font-size:1rem}nav{gap:.5rem}}
+:root{
+  color-scheme:light;
+  --bg:#fcfcfa;--surface:#ffffff;--ink:#1d2329;--soft:#5b6570;--faint:#8a939c;
+  --line:#e4e6e3;--accent:#1f4e79;--accent-bg:#eef3f8;
+  --serif:'Source Serif 4',Charter,'Iowan Old Style',Georgia,'Songti SC','Noto Serif CJK SC',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,figure,ul{margin:0;padding:0}
+a{color:var(--accent);text-decoration:none;text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+.page{width:min(100% - 4rem,70rem);margin:0 auto;display:grid;grid-template-columns:12.5rem minmax(0,1fr);gap:4.5rem;padding:4.5rem 0 3rem}
+
+/* Sidebar */
+.side{position:sticky;top:4.5rem;align-self:start}
+.avatar{display:block;width:11rem;max-width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:10px;background:#fff;box-shadow:0 0 0 1px var(--line)}
+.name{margin-top:1.4rem;font:600 1.75rem/1.15 var(--serif);letter-spacing:-.01em}
+.han{display:block;margin-top:.35rem;font:400 1.05rem/1.3 var(--serif);color:var(--soft);letter-spacing:.12em}
+.role{margin-top:.9rem;font-size:.9rem;line-height:1.5;color:var(--soft)}
+.links{list-style:none;margin-top:1.3rem;display:grid;gap:.45rem;font-size:.9rem}
+.links a{display:inline-flex;align-items:center;gap:.55rem;color:var(--ink)}
+.links a:hover{color:var(--accent)}
+.links svg{width:1rem;height:1rem;flex:none;color:var(--faint)}
+.links a:hover svg{color:var(--accent)}
+.lang{margin-top:1.5rem;font:inherit;font-size:.82rem;cursor:pointer;color:var(--soft);background:none;border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem}
+.lang:hover{color:var(--accent);border-color:var(--accent)}
+
+/* Content */
+main{min-width:0;max-width:52rem}
+section+section{margin-top:3.6rem}
+.label{display:flex;align-items:center;gap:.9rem;font:600 .74rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:1.5rem}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+html[lang="zh-CN"] .label{letter-spacing:.3em}
+.about p{font:400 1.2rem/1.65 var(--serif);color:var(--ink)}
+.about p+p{margin-top:1rem}
+.about .open{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.2rem;padding:.45rem .95rem;border-radius:999px;background:var(--accent-bg);color:var(--accent);font:500 .9rem/1.4 var(--sans)}
+.about .open a{color:inherit;text-decoration:underline;text-underline-offset:.2em}
+.dot{width:.45rem;height:.45rem;flex:none;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(31,78,121,.15)}
+
+/* Publication */
+.pub h3{font:600 1.12rem/1.35 var(--serif);letter-spacing:-.005em}
+.pub h3 a{color:var(--ink)}
+.pub h3 a:hover{color:var(--accent);text-decoration:none}
+.authors{margin-top:.45rem;font-size:.9rem;color:var(--soft)}
+.authors strong,.summary strong{color:var(--ink);font-weight:600}
+.venue{margin-top:.15rem;font-size:.86rem;font-style:italic;color:var(--soft)}
+.summary{margin-top:.7rem;max-width:46rem;font-size:.92rem;line-height:1.6;color:var(--soft)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.9rem}
+.chips a{font-size:.78rem;font-weight:500;padding:.2rem .65rem;border-radius:5px;background:var(--accent-bg);color:var(--accent)}
+.chips a:hover{text-decoration:none;filter:brightness(.96)}
+.pub-body{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:1.6rem;align-items:center;margin-top:1.1rem}
+.pub-body .summary{margin-top:0}
+.pub+.pub{margin-top:2.4rem;padding-top:2.2rem;border-top:1px solid var(--line)}
+.results{margin:0}
+.results a{display:block;padding:.6rem .7rem;border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);cursor:zoom-in;transition:box-shadow .2s}
+.results a:hover{box-shadow:0 0 0 1px var(--accent),0 6px 20px rgba(20,40,60,.1)}
+.results img{display:block;width:100%;height:auto}
+
+/* News */
+.news{list-style:none;display:grid;gap:.55rem}
+.news li{display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:1rem;font-size:.94rem;line-height:1.6}
+.news time{color:var(--faint);font-size:.84rem;line-height:1.85;font-variant-numeric:tabular-nums}
+.news strong{font-weight:600}
+
+/* Timeline */
+.items{list-style:none;display:grid;gap:1.35rem}
+.item{display:grid;grid-template-columns:9.5rem minmax(0,1fr);gap:1.2rem}
+.item time{white-space:nowrap;font-size:.84rem;line-height:1.75;color:var(--faint);font-variant-numeric:tabular-nums}
+.item h3{font:600 .98rem/1.5 var(--sans)}
+.item p{font-size:.9rem;color:var(--soft);line-height:1.55;margin-top:.1rem}
+
+footer{grid-column:2;max-width:52rem;margin-top:1rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--faint)}
+
+/* Tablet */
+@media (max-width:880px){
+  .pub-body{grid-template-columns:1fr;gap:1rem}
+  .results{max-width:30rem}
+  .page{width:calc(100% - 3rem);grid-template-columns:10rem minmax(0,1fr);gap:3rem;padding-top:3rem}
+  .side{top:3rem}
+}
+/* Phone */
+@media (max-width:640px){
+  .page{display:block;width:calc(100% - 2rem);padding:2rem 0 2rem}
+  .side{position:static;display:grid;grid-template-columns:6.5rem minmax(0,1fr);column-gap:1.2rem;align-items:center;margin-bottom:2.6rem}
+  .avatar{grid-row:1/3;border-radius:8px}
+  .name{margin:0;font-size:1.5rem;align-self:end}
+  .role{margin-top:.4rem;align-self:start;font-size:.85rem}
+  .links,.lang{grid-column:1/-1}
+  .links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-top:1.3rem}
+  .lang{justify-self:start;margin-top:1rem}
+  .about p{font-size:1.1rem}
+  section+section{margin-top:2.8rem}
+  .item{grid-template-columns:1fr;gap:.1rem}
+  .item time{order:2}
+  footer{margin-top:2.5rem}
+}
 </style>
 </head>
-<body id="top">
-<header class="bar"><a href="#top" class="signature">Sihan Ji</a><nav aria-label="Navigation"><a href="#research" data-zh="研究">Research</a><a href="#experience" data-zh="经历">Experience</a><button type="button" id="language" lang="zh-CN" hidden>中文</button></nav></header>
-<main>
-<div class="intro" id="about">
-<div class="intro-copy"><div class="intro-name"><h1>Sihan Ji <span class="han" lang="zh-CN">纪斯瀚</span></h1><p class="affiliation" data-zh="上海交通大学 · 信息工程本科生">Undergraduate in Information Engineering<br>Shanghai Jiao Tong University</p></div>
-<p class="bio" data-zh="我在上海交通大学 Deep Pixel Group 跟随曹杰张老师开展研究，关注参考图像引导的图像修复与视频编辑。我尤其感兴趣的是，怎样让模型在恢复文字或人物身份等细节时，判断参考图中哪些信息值得采用。">I work with Jiezhang Cao in the Deep Pixel Group at SJTU on reference-guided image restoration and video editing. I’m interested in how a model decides which details to borrow from a reference when restoring written text or a person’s identity.</p>
-<div class="contact"><a href="mailto:jq2099@sjtu.edu.cn" data-zh="邮箱">Email</a><a href="https://github.com/2199-rgb">GitHub</a></div></div>
-<img src="./avatar.jpg" alt="Sihan Ji" width="914" height="1280">
+<body>
+<div class="page">
+  <aside class="side">
+    <img class="avatar" src="./avatar.jpg" alt="Portrait of Sihan Ji" width="905" height="1280">
+    <h1 class="name">Sihan Ji <span class="han" lang="zh-CN">纪斯瀚</span></h1>
+    <p class="role" data-zh="信息工程 · 本科生<br>上海交通大学">Undergraduate student<br>Information Engineering<br>Shanghai Jiao Tong University</p>
+    <ul class="links">
+      <li><a href="./cv.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span data-zh="简历 (PDF)">CV (PDF)</span></a></li>
+      <li><a href="mailto:jq2099@sjtu.edu.cn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>jq2099@sjtu.edu.cn</a></li>
+      <li><a href="https://github.com/2199-rgb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>2199-rgb</a></li>
+      <li><a href="https://scholar.google.com/citations?user=73yzisQAAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5 5 12v5.5L12 21l7-3.5V12l2-1.2V17h2V9.5L12 3Zm0 2.3 7.6 4.2L12 13.7 4.4 9.5 12 5.3ZM7 13.2l5 2.8 5-2.8v3.1L12 19l-5-2.7v-3.1Z"/></svg>Google Scholar</a></li>
+    </ul>
+    <button type="button" class="lang" id="language" lang="zh-CN" hidden>中文</button>
+  </aside>
+
+  <main>
+    <section class="about" id="about">
+      <h2 class="label" data-zh="简介">About</h2>
+      <p data-zh="我是上海交通大学信息与电子工程学院信息工程专业的本科生，在 Deep Pixel Group 跟随曹杰彰老师开展研究，方向是图像修复、视频编辑与生成，以及世界模型。">I’m an undergraduate in Information Engineering at the School of Information and Electronic Engineering, Shanghai Jiao Tong University. I work with Jiezhang Cao in the Deep Pixel Group on image restoration, video editing and generation, and world models.</p>
+      <p class="open"><span class="dot" aria-hidden="true"></span><span data-zh="正在寻找实习与科研合作机会，欢迎&lt;a href=&quot;mailto:jq2099@sjtu.edu.cn&quot;&gt;邮件联系&lt;/a&gt;。">Open to internships and research collaborations. Feel free to <a href="mailto:jq2099@sjtu.edu.cn">email me</a>.</span></p>
+    </section>
+
+    <section id="news">
+      <h2 class="label" data-zh="动态">News</h2>
+      <ul class="news">
+        <li><time>2026.11</time><span data-zh="&lt;strong&gt;PreciseRef&lt;/strong&gt; 上线 arXiv，并投稿 CVPR 2027。"><strong>PreciseRef</strong> is on arXiv and submitted to CVPR 2027.</span></li>
+        <li><time>2026.08</time><span data-zh="&lt;strong&gt;TRACE&lt;/strong&gt; 投稿 AAAI 2027。"><strong>TRACE</strong> submitted to AAAI 2027.</span></li>
+        <li><time>2026.04</time><span data-zh="加入上海交通大学 Deep Pixel Group，跟随曹杰彰老师开展研究。">Joined the Deep Pixel Group at SJTU, advised by Jiezhang Cao.</span></li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2 class="label" data-zh="代表研究">Research</h2>
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2611.33455">Recovering What Matters, Transferring Only What Is Reliable: Toward Precise Reference-Based Super-Resolution</a></h3>
+        <p class="authors"><strong>Sihan Ji</strong>, Wenxin Chen, Yue Shi, Jiezhang Cao</p>
+        <p class="venue" data-zh="arXiv 预印本，2026 · CVPR 2027 审稿中">arXiv preprint, 2026 · Under review at CVPR 2027</p>
+        <div class="pub-body">
+          <figure class="results">
+            <a href="./preciseref-pipeline.webp" target="_blank" rel="noopener" aria-label="Open the full PreciseRef method figure"><img src="./preciseref-pipeline.webp" width="1900" height="1042" loading="lazy" alt="PreciseRef method overview: token encoding, asymmetric twin-attention and dual-scale reference gating."></a>
+          </figure>
+          <div>
+            <p class="summary" data-zh="PreciseRef 让超分辨率模型忠实读出参考图中的文字、二维码和身份细节，并用两级门控拦截不可靠的参考信息。在我们构建的 VeriRef 基准上，字符准确率达到 &lt;strong&gt;85.6%&lt;/strong&gt;，二维码精确解码率达到 &lt;strong&gt;76.3%&lt;/strong&gt;，现有方法分别只有 17.4% 和 0%。">PreciseRef lets a super-resolution model faithfully read text, codes and identity cues from a reference image, while two gates block unreliable reference content. On our VeriRef benchmark it reaches <strong>85.6%</strong> character accuracy and <strong>76.3%</strong> exact code decoding, versus 17.4% and 0% for existing methods.</p>
+            <div class="chips"><a href="https://arxiv.org/abs/2611.33455">arXiv</a><a href="https://arxiv.org/pdf/2611.33455">PDF</a><a href="./preciseref-pipeline.webp" target="_blank" rel="noopener" data-zh="方法图">Method</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="pub">
+        <h3>TRACE: Training-Free Temporal Reference Attention for Correspondence-Aware Editing without Edited Anchor Frames</h3>
+        <p class="authors"><strong>Sihan Ji</strong>, Yue Shi, Wenjun Zhang, Jiezhang Cao</p>
+        <p class="venue" data-zh="AAAI 2027 审稿中">Under review at AAAI 2027</p>
+        <div class="pub-body">
+          <figure class="results">
+            <a href="./trace-framework.jpg" target="_blank" rel="noopener" aria-label="Open the full TRACE framework figure"><img src="./trace-framework.jpg" width="2000" height="770" loading="lazy" alt="TRACE framework: the reference object becomes a virtual frame whose tokens join the video tokens in the DiT's self-attention, with background anchoring before decoding."></a>
+          </figure>
+          <div>
+            <p class="summary" data-zh="TRACE 无需训练，把参考图中的物体换进视频，同时保留原视频的运动和结构，也不需要先编辑好一帧作为锚点。它把参考图当作一个&lt;strong&gt;虚拟时间帧&lt;/strong&gt;，让预训练视频扩散模型的注意力自己建立参考图与每一帧之间的对应关系。">TRACE swaps a reference object into a video without any training, keeping the original motion and structure and without needing an edited anchor frame. It treats the reference image as a <strong>virtual temporal frame</strong>, so the pretrained video DiT's own attention finds correspondence between the reference and every frame.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2 class="label" data-zh="研究经历">Experience</h2>
+      <ul class="items">
+        <li class="item"><time data-zh="2026.04 – 至今">Apr 2026 – Now</time><div><h3>Deep Pixel Group, SJTU</h3><p data-zh="本科生研究助理 · 图像修复、视频编辑与生成、世界模型">Undergraduate researcher · Image restoration, video editing and generation, world models</p></div></li>
+        <li class="item"><time data-zh="2025.09 – 2026.02">Sep 2025 – Feb 2026</time><div><h3 data-zh="上海交通大学微电子学院">School of Microelectronics, SJTU</h3><p data-zh="本科生研究助理 · 用 Verilog 实现神经网络激活函数的硬件加速">Undergraduate researcher · Hardware acceleration for neural-network activations in Verilog</p></div></li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2 class="label" data-zh="教育背景">Education</h2>
+      <ul class="items">
+        <li class="item"><time data-zh="2024.09 – 2028.06">Sep 2024 – Jun 2028</time><div><h3 data-zh="上海交通大学">Shanghai Jiao Tong University</h3><p data-zh="信息工程 · 工学学士（在读）">B.Eng. in Information Engineering (expected)</p></div></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© 2026 Sihan Ji</footer>
 </div>
-<section id="research"><div class="rule"><h2 data-zh="代表研究">Selected Research</h2><span class="year">2026</span></div>
-<article class="paper">
-<div><h3><a href="https://arxiv.org/abs/2611.33455">Recovering What Matters, Transferring Only What Is Reliable: Toward Precise Reference-Based Super-Resolution</a></h3>
-<p class="authors"><strong>Sihan Ji</strong>, Wenxin Chen, Yue Shi, Jiezhang Cao</p><p class="venue" data-zh="arXiv 预印本 · 2026">arXiv preprint · 2026</p>
-<p data-zh="PreciseRef 在超分辨率重建中从参考图读取文字、二维码和身份细节。两级门控先判断参考图是否相关，再检查局部区域是否匹配，以减少错误细节的迁移。">PreciseRef uses a reference image to recover details such as lettering, QR codes, and facial features. Two gates check whether the reference is relevant and whether individual regions match before transferring detail.</p>
-<div class="resources"><a href="https://arxiv.org/abs/2611.33455">arXiv</a><a href="https://arxiv.org/pdf/2611.33455">PDF</a></div></div>
-<figure class="paper-figure">
-  <a href="./preciseref-pipeline.webp" target="_blank" rel="noopener"><img src="./preciseref-pipeline.webp" width="1900" height="1042" alt="PreciseRef pipeline showing token encoding, asymmetric twin-attention and dual-scale reference gating. Open full-size figure."></a>
-  <figcaption data-zh="PreciseRef 方法流程图 · 点击查看大图">PreciseRef method overview · Click to enlarge</figcaption>
-</figure></article></section>
-<div class="lower"><section id="experience"><div class="rule"><h2 data-zh="研究经历">Research Experience</h2></div>
-<div class="entry"><h3>Deep Pixel Group, SJTU</h3><p data-zh="本科生研究助理 · 参考引导的视频编辑与图像修复">Undergraduate researcher · Reference-guided video editing and image restoration</p><time data-zh="2026 年 4 月至今">Apr 2026 – present</time></div>
-<div class="entry"><h3 data-zh="上海交通大学微电子学院">School of Microelectronics, SJTU</h3><p data-zh="本科生研究助理 · 用 Verilog 实现神经网络激活函数的硬件加速">Undergraduate researcher · Hardware acceleration for neural network activations in Verilog</p><time data-zh="2025 年 9 月至 2026 年 2 月">Sep 2025 – Feb 2026</time></div></section>
-<section id="education"><div class="rule"><h2 data-zh="教育背景">Education</h2></div><div class="entry"><h3 data-zh="上海交通大学">Shanghai Jiao Tong University</h3><p data-zh="信息工程 · 工学学士在读">B.Eng. in Information Engineering</p><time data-zh="2024 年 9 月入学，预计 2028 年 6 月毕业">Sep 2024 – Jun 2028 (expected)</time></div></section></div>
-</main><footer><span>© 2026 Sihan Ji</span><a href="#top" data-zh="返回顶部">Back to top</a></footer>
 <script>
 const toggle = document.querySelector('#language');
-const labels = Array.from(document.querySelectorAll('[data-zh]'), el => ({el, english: Array.from(el.childNodes, node => node.cloneNode(true))}));
+const labels = Array.from(document.querySelectorAll('[data-zh]'), el => ({el, english: el.innerHTML}));
 function setLanguage(chinese) {
   document.documentElement.lang = chinese ? 'zh-CN' : 'en';
-  for (const {el, english} of labels) {
-    if (chinese) el.textContent = el.dataset.zh;
-    else el.replaceChildren(...english.map(node => node.cloneNode(true)));
-  }
+  for (const {el, english} of labels) el.innerHTML = chinese ? el.dataset.zh : english;
   toggle.textContent = chinese ? 'English' : '中文';
   toggle.lang = chinese ? 'en' : 'zh-CN';
+  try { localStorage.setItem('lang', chinese ? 'zh' : 'en'); } catch {}
 }
 toggle.hidden = false;
 toggle.addEventListener('click', () => setLanguage(document.documentElement.lang === 'en'));
+try { if (localStorage.getItem('lang') === 'zh') setLanguage(true); } catch {}
 </script>
 </body>
 </html>
